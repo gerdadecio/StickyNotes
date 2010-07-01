@@ -1,0 +1,89 @@
+=colors
+  .colors
+    position: absolute
+    bottom: -23px
+    left: 15%
+    z-index: -1
+    a
+      padding: 10px
+      width: 20px
+      height: 0
+      display: block
+      border: 1px solid #302F2F
+      border-top: none
+      -moz-border-radius: 0 0 10px 10px
+      -webkit-border-radius: 0 0 10px 10px
+      &.green
+        background: #56C749
+      &.yellow
+        background: #F5CD72
+      &.blue
+        background: #73c4eb
+      &.orange
+        background: #eb8145
+      &.white
+        background: #fff
+
+=note
+  .note
+    padding: 10px
+    font-size: 18px
+    font-weight: bold
+    word-spacing: -1px
+    min-width: 300px
+    min-height: 200px
+    
+    -moz-box-shadow: 1px 6px 6px #302F2F
+    -webkit-box-shadow: 1px 6px 6px #302F2F
+    a.delete_link
+      position: absolute
+      top: -15px
+      left: -15px
+      width: 30px
+      height: 30px
+      background: transparent url(/images/fancybox/fancy_closebox.png)
+  
+
+.thumbnails_container
+  height: 70px
+  background: #323232
+.wood_top
+  height: 40px
+  background: #a05b27 url(/images/wood.png) repeat
+  position: relative
+  -moz-box-shadow: -20px 1px 20px #000000
+  -webkit-box-shadow: -20px 1px 20px #000000
+  .title
+    position: absolute
+    top: 10px
+    left: 45%
+    span
+      font-size: 20px
+
+
+  
+.board
+  height: 600px
+  background: #A05B27 url(/images/board.png) repeat scroll 0 0
+  margin-bottom: 50px
+  overflow: auto
+
+.note_container  
+  position: absolute
+  +note
+  .submit
+    margin-top: -30px
+    margin-left: 5px
+  +colors
+        
+        
+#notes
+  scrollbar-base-color: red
+  width: 800px
+  height: 300px
+  overflow-y: auto
+  
+.save_link
+  font-size: 15px
+  font-weight: bold
+  margin-top: -10px

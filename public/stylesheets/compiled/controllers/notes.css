@@ -1,0 +1,115 @@
+/* line 47, ../../../../app/stylesheets/controllers/notes.sass */
+.thumbnails_container {
+  height: 70px;
+  background: #323232;
+}
+
+/* line 50, ../../../../app/stylesheets/controllers/notes.sass */
+.wood_top {
+  height: 40px;
+  background: #a05b27 url(/images/wood.png) repeat;
+  position: relative;
+  -moz-box-shadow: -20px 1px 20px black;
+  -webkit-box-shadow: -20px 1px 20px black;
+}
+/* line 56, ../../../../app/stylesheets/controllers/notes.sass */
+.wood_top .title {
+  position: absolute;
+  top: 10px;
+  left: 45%;
+}
+/* line 60, ../../../../app/stylesheets/controllers/notes.sass */
+.wood_top .title span {
+  font-size: 20px;
+}
+
+/* line 65, ../../../../app/stylesheets/controllers/notes.sass */
+.board {
+  height: 600px;
+  background: #a05b27 url(/images/board.png) repeat scroll 0 0;
+  margin-bottom: 50px;
+  overflow: auto;
+}
+
+/* line 71, ../../../../app/stylesheets/controllers/notes.sass */
+.note_container {
+  position: absolute;
+}
+/* line 28, ../../../../app/stylesheets/controllers/notes.sass */
+.note_container .note {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  word-spacing: -1px;
+  min-width: 300px;
+  min-height: 200px;
+  -moz-box-shadow: 1px 6px 6px #302f2f;
+  -webkit-box-shadow: 1px 6px 6px #302f2f;
+}
+/* line 38, ../../../../app/stylesheets/controllers/notes.sass */
+.note_container .note a.delete_link {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  background: transparent url(/images/fancybox/fancy_closebox.png);
+}
+/* line 74, ../../../../app/stylesheets/controllers/notes.sass */
+.note_container .submit {
+  margin-top: -30px;
+  margin-left: 5px;
+}
+/* line 2, ../../../../app/stylesheets/controllers/notes.sass */
+.note_container .colors {
+  position: absolute;
+  bottom: -23px;
+  left: 15%;
+  z-index: -1;
+}
+/* line 7, ../../../../app/stylesheets/controllers/notes.sass */
+.note_container .colors a {
+  padding: 10px;
+  width: 20px;
+  height: 0;
+  display: block;
+  border: 1px solid #302f2f;
+  border-top: none;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+}
+/* line 16, ../../../../app/stylesheets/controllers/notes.sass */
+.note_container .colors a.green {
+  background: #56c749;
+}
+/* line 18, ../../../../app/stylesheets/controllers/notes.sass */
+.note_container .colors a.yellow {
+  background: #f5cd72;
+}
+/* line 20, ../../../../app/stylesheets/controllers/notes.sass */
+.note_container .colors a.blue {
+  background: #73c4eb;
+}
+/* line 22, ../../../../app/stylesheets/controllers/notes.sass */
+.note_container .colors a.orange {
+  background: #eb8145;
+}
+/* line 24, ../../../../app/stylesheets/controllers/notes.sass */
+.note_container .colors a.white {
+  background: white;
+}
+
+/* line 80, ../../../../app/stylesheets/controllers/notes.sass */
+#notes {
+  scrollbar-base-color: red;
+  width: 800px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+/* line 86, ../../../../app/stylesheets/controllers/notes.sass */
+.save_link {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: -10px;
+}

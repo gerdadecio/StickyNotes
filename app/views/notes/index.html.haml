@@ -1,0 +1,36 @@
+-form_for :notes, :url => update_all_notes_path, :html => {:method => :put} do |f|
+  .thumbnails_container
+    &nbsp;
+  .wood_top
+    .button.left
+      =link_to "+", "#add_note", :class => "clear_button add_link", :rel => 'fancybox'
+      =link_to "Cancel", notes_path, :class => "clear_button cancel_link hide"
+    .button.right
+      =link_to "Edit", "#", :class => "clear_button edit_link"
+      =f.submit "Save", :class => "clear_button save_link hide"
+    .title
+      %span.bold Sticky Notes
+  .board{:style => 'position: relative;'}
+    - @notes.each do |note|
+      .note_container{:style => "left: #{note.x_pos.to_s + 'px'}; top: #{note.y_pos.to_s + 'px'}; z-index: 100", :value => "#{note.id}", :id => "note_#{note.id}"}
+        = hidden_field_tag "notes[][id]", note.id
+        .note{:style => "background: #{note.background} url(/images/note_overlay.png) repeat-x scroll 0 21px;", :class => 'ui-widget-content'}
+          =text_area_tag "notes[][contents]", note.content, :class => "centered content", :disabled => true
+          =link_to " ", "#", :class => "delete_link hide #{note.id}", :confirm => "Permanently delete note?"
+        .colors.hide
+          .left=link_to " ", "#", :class => 'orange'
+          .left=link_to " ", "#", :class => 'yellow'
+          .left=link_to " ", "#", :class => 'green'
+          .left=link_to " ", "#", :class => 'blue'
+          .left=link_to " ", "#", :class => 'white'
+        = hidden_field_tag "notes[][background]", note.background
+        = hidden_field_tag "notes[][x_pos]", note.x_pos
+        = hidden_field_tag "notes[][y_pos]", note.y_pos
+        = hidden_field_tag "notes[][content]", note.content
+        
+        //= hidden_field_tag "notes[#{note.id}][z_pos]", :value => 100
+        
+#add_note.hide
+  .add_container.note_container
+    = render :partial => "add_note_form"
+

@@ -1,0 +1,9 @@
+= javascript_include_tag "jquery-1.3.2.min.js"
+= javascript_include_tag "application.js"
+= javascript_include_tag "fancybox.js"
+= javascript_include_tag "jquery-ui-1.7.2.custom.js"
+
+
+= javascript_include_tag("controllers/#{@controller.controller_name}") if File.exist?("public/javascripts/controllers/#{@controller.controller_name}.js")
+
+= yield(:javascript_includes)

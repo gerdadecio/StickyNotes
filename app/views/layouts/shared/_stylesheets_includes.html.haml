@@ -1,0 +1,6 @@
+= stylesheet_link_tag 'compiled/modules/fancybox'
+= stylesheet_link_tag 'compiled/modules/jquery-stickynotes'
+
+= stylesheet_link_tag("compiled/controllers/#{@controller.controller_name}") if File.exist?("public/stylesheets/compiled/controllers/#{@controller.controller_name}.css")
+
+= yield(:stylesheet_includes)

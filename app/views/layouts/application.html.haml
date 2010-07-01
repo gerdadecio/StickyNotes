@@ -1,0 +1,16 @@
+=render :partial => "layouts/doctype"
+%html
+
+  %head
+    %title Sticky Notes
+    %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}/ 
+    = stylesheet_link_tag 'compiled/application'
+    = render :partial => "layouts/shared/stylesheets_includes"
+    = render :partial => "layouts/shared/javascript_includes"
+    .thumbnails_container
+      &nbsp;
+    = yield(:head)
+    
+  %body.public.board
+    #container
+      = yield

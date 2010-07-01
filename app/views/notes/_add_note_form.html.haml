@@ -1,0 +1,25 @@
+- form_for :note, Note.new, :url => notes_path, :html => {:method => :post} do |f|
+  .note{:style => "background: #F5CD72 url(/images/note_overlay.png) repeat-x scroll 0 21px;", :class => 'ui-widget-content'}
+    =text_area_tag 'note[content]', 'Add Text To This Note', :class => "centered content"
+    =link_to " ", "#", :class => "delete_link hide"
+  .colors
+    .left=link_to " ", "#", :class => 'orange'
+    .left=link_to " ", "#", :class => 'yellow'
+    .left=link_to " ", "#", :class => 'green'
+    .left=link_to " ", "#", :class => 'blue'
+    .left=link_to " ", "#", :class => 'white'
+  = f.hidden_field 'background', :value => '#F5CD72'
+  = f.hidden_field 'x_pos', :value => 100
+  = f.hidden_field 'y_pos', :value => 100
+  = f.hidden_field 'z_pos', :value => 99999
+  .submit.left=f.submit "Save", :class => "note_button clear_button"
+
+:javascript
+  $(document).ready(function(){
+    $('.colors a').click(function(){
+      selectedBg = $(this).css('background-color');
+      $(this).parents('.note_container:first').find('input#note_background').val(selectedBg);
+      $(this).parents('.note_container:first').find('input#notes__background').val(selectedBg);
+      $(this).parents('.note_container').eq(0).find('.note').css('background-color',selectedBg);
+    });
+  });

@@ -1,0 +1,168 @@
+/* line 4, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html {
+  font-size: 100.01%;
+}
+
+/* line 16, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+pre, a, abbr, acronym, address, code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 18, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" "";
+}
+/* line 45, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 20, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+th, td, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 1, ../../../app/stylesheets/partials/_forms.sass */
+textarea.content {
+  background: transparent;
+  border: none;
+  width: 295px;
+  height: 170px;
+  color: black !important;
+  font-family: Comic Sans MS !important;
+  letter-spacing: -1px;
+}
+
+/* line 2, ../../../app/stylesheets/partials/_links.sass */
+.wood_top a, .wood_top a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 6, ../../../app/stylesheets/partials/_links.sass */
+.wood_top .button {
+  margin: 10px;
+}
+
+/* line 9, ../../../app/stylesheets/partials/_links.sass */
+.wood_top * {
+  color: #4c2100 !important;
+  text-shadow: 0 0 1px #a9a9a9 !important;
+}
+
+/* line 10, ../../../app/stylesheets/partials/_buttons.sass */
+.clear_button {
+  background: transparent url(/images/button_overlay.png) repeat;
+  padding: 5px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #5c3838;
+}
+/* line 2, ../../../app/stylesheets/partials/_buttons.sass */
+.clear_button.note_button, .clear_button.note_button:hover {
+  color: white;
+  padding: 4px;
+  text-shadow: 0 0 5px #291705;
+  font-size: 10px;
+}
+/* line 7, ../../../app/stylesheets/partials/_buttons.sass */
+.clear_button.note_button.brown, .clear_button.note_button:hover.brown {
+  background: #b09749 url(/images/button_overlay.png) repeat scroll 0 0;
+}
+/* line 17, ../../../app/stylesheets/partials/_buttons.sass */
+.clear_button:hover {
+  background: #e7cdb9 url(/images/button_overlay.png) repeat;
+}
+
+/* line 1, ../../../app/stylesheets/partials/_typography.sass */
+.left {
+  float: left;
+}
+
+/* line 3, ../../../app/stylesheets/partials/_typography.sass */
+.right {
+  float: right;
+}
+
+/* line 5, ../../../app/stylesheets/partials/_typography.sass */
+.clear {
+  clear: both;
+}
+
+/* line 7, ../../../app/stylesheets/partials/_typography.sass */
+.bold {
+  font-weight: bold;
+}
+
+/* line 9, ../../../app/stylesheets/partials/_typography.sass */
+.hide {
+  display: none;
+}
+
+/* line 11, ../../../app/stylesheets/partials/_typography.sass */
+.centered {
+  text-align: center;
+}
+
+/* line 12, ../../../app/stylesheets/application.sass */
+body * {
+  font-family: helvetica;
+}
