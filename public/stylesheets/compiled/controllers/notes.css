@@ -1,10 +1,10 @@
 /* line 47, ../../../../app/stylesheets/controllers/notes.sass */
 .thumbnails_container {
-  height: 70px;
+  height: 50px;
   background: #323232;
 }
 
-/* line 50, ../../../../app/stylesheets/controllers/notes.sass */
+/* line 51, ../../../../app/stylesheets/controllers/notes.sass */
 .wood_top {
   height: 40px;
   background: #a05b27 url(/images/wood.png) repeat;
@@ -12,18 +12,23 @@
   -moz-box-shadow: -20px 1px 20px black;
   -webkit-box-shadow: -20px 1px 20px black;
 }
-/* line 56, ../../../../app/stylesheets/controllers/notes.sass */
+/* line 57, ../../../../app/stylesheets/controllers/notes.sass */
 .wood_top .title {
   position: absolute;
   top: 10px;
   left: 45%;
 }
-/* line 60, ../../../../app/stylesheets/controllers/notes.sass */
+/* line 61, ../../../../app/stylesheets/controllers/notes.sass */
 .wood_top .title span {
   font-size: 20px;
 }
 
 /* line 65, ../../../../app/stylesheets/controllers/notes.sass */
+#container .board {
+  width: 95%;
+}
+
+/* line 68, ../../../../app/stylesheets/controllers/notes.sass */
 .board {
   height: 600px;
   background: #a05b27 url(/images/board.png) repeat scroll 0 0;
@@ -31,7 +36,7 @@
   overflow: auto;
 }
 
-/* line 71, ../../../../app/stylesheets/controllers/notes.sass */
+/* line 74, ../../../../app/stylesheets/controllers/notes.sass */
 .note_container {
   position: absolute;
 }
@@ -55,7 +60,7 @@
   height: 30px;
   background: transparent url(/images/fancybox/fancy_closebox.png);
 }
-/* line 74, ../../../../app/stylesheets/controllers/notes.sass */
+/* line 77, ../../../../app/stylesheets/controllers/notes.sass */
 .note_container .submit {
   margin-top: -30px;
   margin-left: 5px;
@@ -99,7 +104,7 @@
   background: white;
 }
 
-/* line 80, ../../../../app/stylesheets/controllers/notes.sass */
+/* line 83, ../../../../app/stylesheets/controllers/notes.sass */
 #notes {
   scrollbar-base-color: red;
   width: 800px;
@@ -107,7 +112,7 @@
   overflow-y: auto;
 }
 
-/* line 86, ../../../../app/stylesheets/controllers/notes.sass */
+/* line 89, ../../../../app/stylesheets/controllers/notes.sass */
 .save_link {
   font-size: 15px;
   font-weight: bold;

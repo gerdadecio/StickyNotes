@@ -2,6 +2,9 @@
 = javascript_include_tag "application.js"
 = javascript_include_tag "fancybox.js"
 = javascript_include_tag "jquery-ui-1.7.2.custom.js"
+= javascript_include_tag "jquery.mousewheel.js"
+= javascript_include_tag "jquery.em.js"
+= javascript_include_tag "jscrollpane.js"
 
 
 = javascript_include_tag("controllers/#{@controller.controller_name}") if File.exist?("public/javascripts/controllers/#{@controller.controller_name}.js")

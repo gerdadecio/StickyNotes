@@ -14,3 +14,8 @@
   %body.public.board
     #container
       = yield
+      
+:javascript
+  $(document).ready(function(){
+    $('#container .board').jScrollPane({scrollbarWidth: 15});
+  })
