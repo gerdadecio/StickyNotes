@@ -2,7 +2,7 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: test_development
+  database: stickynotes_development
   pool: 5
   username: root
   password:
@@ -15,7 +15,7 @@ test:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: test_test
+  database: stickynotes_test
   pool: 5
   username: root
   password:
@@ -25,7 +25,7 @@ production:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: test_production
+  database: stickynotes_production
   pool: 5
   username: root
   password: 

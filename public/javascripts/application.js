@@ -40,19 +40,6 @@ $(document).ready(function(){
     display_buttons();
   });
   
-  // $('.cancel_link').live("click",function(){
-  //   display_buttons();
-  //   $.ajax({
-  //     type: "GET",
-  //     url: "/notes?ajax=true",
-  //     dataType: "html",
-  //     success: function(htm){
-  //       $('.board').html(htm);
-  //     }
-  //   }); 
-  //   return false;
-  // });
-  
   $('.delete_link').live("click",function(){
     $(this).parents('.note_container').eq(0).fadeOut();
     $.ajax({

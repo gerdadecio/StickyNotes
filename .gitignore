@@ -1,0 +1,8 @@
+.DS_Store
+config/database.yml
+config/config.yml
+tmp/**/*
+log/*.log
+db/*.sqlite3
+*.tmproj
+tmp/restart.txt
