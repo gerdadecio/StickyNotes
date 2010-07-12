@@ -13989,3 +13989,234 @@ Rendered layouts/_doctype (0.1ms)
 Rendered layouts/shared/_stylesheets_includes (0.6ms)
 Rendered layouts/shared/_javascript_includes (0.7ms)
 Completed in 82ms (View: 75, DB: 2) | 200 OK [http://localhost/notes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#update_all (for 127.0.0.1 at 2010-07-12 14:03:58) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"2rpjRYI0nlTcsRwHlNZVsC7eFiAMp3HrNOW3P/go1D8=", "notes"=>[{"x_pos"=>"803px", "background"=>"rgb(115, 196, 235)", "id"=>"1", "content"=>"wla lang...", "y_pos"=>"238px"}]}
+  [4;35;1mNote Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mNote Load (1.2ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.`id` = '1') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mNote Update (0.4ms)[0m   [0;1mUPDATE `notes` SET `y_pos` = 238, `x_pos` = 803 WHERE `id` = 1[0m
+  [4;35;1mSQL (5.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/notes
+Completed in 20ms (DB: 9) | 302 Found [http://localhost/notes/update_all]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-07-12 14:03:58) [GET]
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM `notes` [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;35;1mNote Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Rendered notes/_add_note_form (2.6ms)
+Rendered layouts/_doctype (0.1ms)
+Rendered layouts/shared/_stylesheets_includes (1.7ms)
+Rendered layouts/shared/_javascript_includes (1.1ms)
+Completed in 22ms (View: 14, DB: 4) | 200 OK [http://localhost/notes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-07-12 14:35:56) [GET]
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM `notes` [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;35;1mNote Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Rendered notes/_add_note_form (2.4ms)
+Rendered layouts/_doctype (0.1ms)
+Rendered layouts/shared/_stylesheets_includes (0.5ms)
+Rendered layouts/shared/_javascript_includes (0.7ms)
+Completed in 16ms (View: 10, DB: 3) | 200 OK [http://localhost/notes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-07-12 14:35:58) [GET]
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM `notes` [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;35;1mNote Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Rendered notes/_add_note_form (2.4ms)
+Rendered layouts/_doctype (0.1ms)
+Rendered layouts/shared/_stylesheets_includes (0.5ms)
+Rendered layouts/shared/_javascript_includes (0.6ms)
+Completed in 15ms (View: 10, DB: 2) | 200 OK [http://localhost/notes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#update_all (for 127.0.0.1 at 2010-07-12 14:36:08) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"2rpjRYI0nlTcsRwHlNZVsC7eFiAMp3HrNOW3P/go1D8=", "notes"=>[{"x_pos"=>"143px", "background"=>"rgb(245, 205, 114)", "id"=>"1", "content"=>"wla lang...", "y_pos"=>"58px"}]}
+  [4;36;1mNote Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.`id` = '1') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mNote Update (0.3ms)[0m   [0mUPDATE `notes` SET `y_pos` = 58, `background` = 'rgb(245, 205, 114)', `x_pos` = 143 WHERE `id` = 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/notes
+Completed in 11ms (DB: 3) | 302 Found [http://localhost/notes/update_all]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-07-12 14:36:08) [GET]
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM `notes` [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;36;1mNote Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+Rendered notes/_add_note_form (2.4ms)
+Rendered layouts/_doctype (0.1ms)
+Rendered layouts/shared/_stylesheets_includes (0.5ms)
+Rendered layouts/shared/_javascript_includes (0.6ms)
+Completed in 17ms (View: 10, DB: 2) | 200 OK [http://localhost/notes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#create (for 127.0.0.1 at 2010-07-12 14:36:15) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"2rpjRYI0nlTcsRwHlNZVsC7eFiAMp3HrNOW3P/go1D8=", "note"=>{"x_pos"=>"100", "background"=>"rgb(235, 129, 69)", "y_pos"=>"100", "content"=>"nw", "z_pos"=>"99999"}}
+  [4;35;1mNote Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mNote Create (0.2ms)[0m   [0mINSERT INTO `notes` (`x_pos`, `background`, `content`, `y_pos`, `z_pos`) VALUES(100, 'rgb(235, 129, 69)', 'nw', 100, 99999)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/notes
+Completed in 9ms (DB: 3) | 302 Found [http://localhost/notes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-07-12 14:36:15) [GET]
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM `notes` [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;36;1mNote Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+Rendered notes/_add_note_form (2.8ms)
+Rendered layouts/_doctype (0.1ms)
+Rendered layouts/shared/_stylesheets_includes (0.5ms)
+Rendered layouts/shared/_javascript_includes (0.6ms)
+Completed in 18ms (View: 12, DB: 2) | 200 OK [http://localhost/notes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#update_all (for 127.0.0.1 at 2010-07-12 14:36:25) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"2rpjRYI0nlTcsRwHlNZVsC7eFiAMp3HrNOW3P/go1D8=", "notes"=>[{"x_pos"=>"143", "background"=>"rgb(245, 205, 114)", "id"=>"1", "content"=>"wla lang...", "y_pos"=>"58"}, {"x_pos"=>"717px", "background"=>"rgb(86, 199, 73)", "id"=>"2", "content"=>"heh", "y_pos"=>"103px"}]}
+  [4;35;1mNote Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mNote Load (0.5ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.`id` = '1') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mNote Load (0.2ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.`id` = '2') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mNote Update (0.3ms)[0m   [0mUPDATE `notes` SET `content` = 'heh', `y_pos` = 103, `background` = 'rgb(86, 199, 73)', `x_pos` = 717 WHERE `id` = 2[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/notes
+Completed in 16ms (DB: 5) | 302 Found [http://localhost/notes/update_all]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-07-12 14:36:25) [GET]
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM `notes` [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;36;1mNote Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+Rendered notes/_add_note_form (2.3ms)
+Rendered layouts/_doctype (0.1ms)
+Rendered layouts/shared/_stylesheets_includes (0.6ms)
+Rendered layouts/shared/_javascript_includes (0.7ms)
+Completed in 19ms (View: 12, DB: 3) | 200 OK [http://localhost/notes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-07-12 14:36:29) [GET]
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM `notes` [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;36;1mNote Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+Rendered notes/_add_note_form (2.5ms)
+Rendered layouts/_doctype (0.1ms)
+Rendered layouts/shared/_stylesheets_includes (0.5ms)
+Rendered layouts/shared/_javascript_includes (0.6ms)
+Completed in 17ms (View: 11, DB: 2) | 200 OK [http://localhost/notes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-07-12 14:37:08) [GET]
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM `notes` [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;36;1mNote Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+Rendered notes/_add_note_form (2.4ms)
+Rendered layouts/_doctype (0.1ms)
+Rendered layouts/shared/_stylesheets_includes (0.5ms)
+Rendered layouts/shared/_javascript_includes (0.6ms)
+Completed in 17ms (View: 11, DB: 2) | 200 OK [http://localhost/notes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-07-12 14:37:13) [GET]
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM `notes` [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;36;1mNote Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+Rendered notes/_add_note_form (2.6ms)
+Rendered layouts/_doctype (0.1ms)
+Rendered layouts/shared/_stylesheets_includes (0.5ms)
+Rendered layouts/shared/_javascript_includes (1.5ms)
+Completed in 19ms (View: 13, DB: 2) | 200 OK [http://localhost/notes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-07-12 14:37:18) [GET]
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM `notes` [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;36;1mNote Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `notes`[0m
+Rendered notes/_add_note_form (2.3ms)
+Rendered layouts/_doctype (0.1ms)
+Rendered layouts/shared/_stylesheets_includes (0.5ms)
+Rendered layouts/shared/_javascript_includes (0.7ms)
+Completed in 17ms (View: 11, DB: 3) | 200 OK [http://localhost/notes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#update_all (for 127.0.0.1 at 2010-07-12 14:37:29) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"2rpjRYI0nlTcsRwHlNZVsC7eFiAMp3HrNOW3P/go1D8=", "notes"=>[{"x_pos"=>"131px", "background"=>"rgb(115, 196, 235)", "id"=>"1", "content"=>"wla lang...", "y_pos"=>"193px"}, {"x_pos"=>"562px", "background"=>"rgb(86, 199, 73)", "id"=>"2", "content"=>"heh", "y_pos"=>"35px"}]}
+  [4;35;1mNote Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mNote Load (1.8ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.`id` = '1') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mNote Update (1.1ms)[0m   [0;1mUPDATE `notes` SET `y_pos` = 193, `background` = 'rgb(115, 196, 235)', `x_pos` = 131 WHERE `id` = 1[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mNote Load (0.4ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.`id` = '2') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mNote Update (0.2ms)[0m   [0;1mUPDATE `notes` SET `y_pos` = 35, `x_pos` = 562 WHERE `id` = 2[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/notes
+Completed in 25ms (DB: 8) | 302 Found [http://localhost/notes/update_all]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NotesController#index (for 127.0.0.1 at 2010-07-12 14:37:29) [GET]
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM `notes` [0m
+Rendering template within layouts/application
+Rendering notes/index
+  [4;35;1mNote Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+Rendered notes/_add_note_form (2.7ms)
+Rendered layouts/_doctype (0.1ms)
+Rendered layouts/shared/_stylesheets_includes (0.5ms)
+Rendered layouts/shared/_javascript_includes (0.7ms)
+Completed in 18ms (View: 12, DB: 2) | 200 OK [http://localhost/notes]

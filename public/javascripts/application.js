@@ -17,6 +17,7 @@ $(document).ready(function(){
       $(this).find('input#notes__y_pos').val(yposVar);
     }
   });
+  
   $('.note').resizable();
 
   $('.edit_link').click(function(){
@@ -32,10 +33,12 @@ $(document).ready(function(){
       $(this).parents('.note_container').eq(0).find('input#notes__content').attr("value",$(this).val());
     });
   });
+  
   $('.add_link').click(function(){
     $('textarea').attr('disabled',false);
     $('.add_container').find('.colors').show();
   });
+  
   $('.save_link').click(function(){
     display_buttons();
   });
